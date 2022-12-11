@@ -1,4 +1,5 @@
 # MatrixMe
+Digify your images for the matrix world with this tool!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
 ![Screenshot 2022-12-11 110640](https://user-images.githubusercontent.com/57598793/206888240-a3017690-2de9-4717-bffc-4d770de4baa9.png)
