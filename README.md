@@ -1,6 +1,11 @@
 # MatrixMe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.6.
+![Screenshot 2022-12-11 110640](https://user-images.githubusercontent.com/57598793/206888240-a3017690-2de9-4717-bffc-4d770de4baa9.png)
+![Screenshot 2022-12-11 111324](https://user-images.githubusercontent.com/57598793/206888391-3c9b56fb-09b3-49df-a727-94738bc77699.png)
+
+
+Try with simple images for better results that does not have too much detail. Like clip art, vector graphics or cartoon illustrations. 
 
 ## Development server
 
