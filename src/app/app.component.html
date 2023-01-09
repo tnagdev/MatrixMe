@@ -1,6 +1,7 @@
 <div class="app-container">
   <div class="titleBanner"><p class="title">Digify</p></div>
-  <div id="canvas-container"></div>
+  <div  class="canvasAndControl">
+    <div id="canvas-container"></div>
   <div class="toolbar">
     <!-- <div class="title">Digify</div> -->
     <input (change)="onFileChoose($event)" type="file" class="fileInp"/>
@@ -52,5 +53,6 @@
       <span>Intensity</span>
       <input type="range" min="-1" step="0.01" max="1" [(ngModel)]="intensity">
     </div>
+  </div>
   </div>
 </div>
