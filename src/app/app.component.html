@@ -4,8 +4,8 @@
     <div (mouseover)="mouseHover=true" (mouseout)="mouseHover=false" id="canvas-container"></div>
   <div class="toolbar">
     <!-- <div class="title">Digify</div> -->
-    <p *ngIf="mouseHover">Upload image here -></p>
-    <p *ngIf="!mouseHover"> </p>
+    <p class="hoverText" *ngIf="mouseHover">Upload image here -></p>
+    <p class="hoverText" *ngIf="!mouseHover"> </p>
     <input (change)="onFileChoose($event)" type="file" class="fileInp"/>
     <div class="control">
       <input type="checkbox" [(ngModel)]='invert' />
