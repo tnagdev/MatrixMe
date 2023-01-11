@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
     fitToHeight: any = true;
     showColor: any;
     isArray1: any = true;
+    mouseHover: boolean = false;
 
     constructor() {
         
