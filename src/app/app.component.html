@@ -5,7 +5,7 @@
   <div class="toolbar">
     <!-- <div class="title">Digify</div> -->
     <p *ngIf="mouseHover">Upload image here -></p>
-    <p *ngIf="!mouseHover">lol</p>
+    <p *ngIf="!mouseHover"> </p>
     <input (change)="onFileChoose($event)" type="file" class="fileInp"/>
     <div class="control">
       <input type="checkbox" [(ngModel)]='invert' />
