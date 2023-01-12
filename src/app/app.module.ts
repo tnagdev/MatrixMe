@@ -4,8 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { KnobModule } from "primeng/knob";
+// import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+// import { KnobModule } from "primeng/knob";
 
 @NgModule({
   declarations: [
@@ -13,8 +13,8 @@ import { KnobModule } from "primeng/knob";
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule, 
-    KnobModule,
+    // BrowserAnimationsModule, 
+    // KnobModule,
     FormsModule
   ],
   providers: [],
