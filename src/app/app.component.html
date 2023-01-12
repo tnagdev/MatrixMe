@@ -4,7 +4,7 @@
     <div (mouseover)="mouseHover=true" (mouseout)="mouseHover=false" id="canvas-container"></div>
   <div class="toolbar">
     <!-- <div class="title">Digify</div> -->
-    <p class="hoverText" *ngIf="mouseHover">Upload image here -></p>
+    <p class="hoverText" *ngIf="mouseHover">Upload image here <img src='arrow.png'/></p>
     <p class="hoverText" *ngIf="!mouseHover"> </p>
     <input (change)="onFileChoose($event)" type="file" class="fileInp"/>
     <div class="control">
