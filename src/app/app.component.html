@@ -1,60 +1,99 @@
 <div class="app-container">
-  <div class="titleBanner"><span class="title">Digify</span> your favourite images</div>
-  <div  class="canvasAndControl">
-    <div (mouseover)="mouseHover=true" (mouseout)="mouseHover=false" id="canvas-container"></div>
-  <div class="toolbar">
-    <!-- <div class="title">Digify</div> -->
-    <p class="hoverText" *ngIf="mouseHover">Upload image here &rarr;</p>
-    <p class="hoverText" *ngIf="!mouseHover"> </p>
-    <input (change)="onFileChoose($event)" type="file" class="fileInp"/>
-    <div class="control">
-      <input type="checkbox" [(ngModel)]='invert' />
-      <span>Invert</span>
-    </div>
-    <div class="control">
-      <input type="checkbox" [(ngModel)]='matrix' />
-      <span>Matrix</span>
-    </div>
-    <div class="control">
-      <input type="checkbox" [(ngModel)]='fitToHeight' />
-      <span>Fit To Height</span>
-    </div>
-    <div class="control">
-      <input type="checkbox" [(ngModel)]='showColor' />
-      <span>Show Colors</span>
-    </div>
-    <div class="control border">
-      <input type="checkbox" [(ngModel)]='isArray1' />
-      <span>Use charset 1</span>
-    </div>
-    <div class="range-ctrl">
-      <span>Dark Threshold</span>
-      <input type="range" min="0" max="255" [(ngModel)]="darkThreshold">
-    </div>
-    <div class="range-ctrl">
-      <span>Light Threshold</span>
-      <input type="range" min="0" max="100" [(ngModel)]="lightThreshold">
-    </div>
-    <div class="range-ctrl">
-      <span>Fine Tune</span>
-      <input type="range" min="0" max="100" [(ngModel)]="spacePadding">
-    </div>
-    <div *ngIf="showColor" class="range-ctrl">
-      <span>Brightness</span>
-      <input type="range" min="-1" step="0.01" max="1" [(ngModel)]="brightness">
-    </div>
-    <div *ngIf="showColor" class="range-ctrl">
-      <span>Contrast</span>
-      <input type="range" min="-100" step="1" max="100" [(ngModel)]="contrast">
-    </div>
-    <div *ngIf="showColor" class="range-ctrl">
-      <span>Saturation</span>
-      <input type="range" min="-1" step="0.01" max="1" [(ngModel)]="saturation">
-    </div>
-    <div *ngIf="showColor" class="range-ctrl">
-      <span>Intensity</span>
-      <input type="range" min="-1" step="0.01" max="1" [(ngModel)]="intensity">
-    </div>
+  <div class="titleBanner">
+    <span class="title">Digify</span> your favourite images
   </div>
+  <div class="canvasAndControl">
+    <div
+      (mouseover)="mouseHover = true"
+      (mouseout)="mouseHover = false"
+      id="canvas-container"
+    ></div>
+    <div class="toolbar">
+      <!-- <div class="title">Digify</div> -->
+      <p class="hoverText" *ngIf="mouseHover">Upload image here &rarr;</p>
+      <p class="hoverText" *ngIf="!mouseHover"></p>
+      <input (change)="onFileChoose($event)" type="file" class="fileInp" />
+      <div class="control">
+        <input type="checkbox" [(ngModel)]="invert" />
+        <span>Invert</span>
+      </div>
+      <div class="control">
+        <input type="checkbox" [(ngModel)]="matrix" />
+        <span>Matrix</span>
+      </div>
+      <div class="control">
+        <input type="checkbox" [(ngModel)]="fitToHeight" />
+        <span>Fit To Height</span>
+      </div>
+      <div class="control">
+        <input type="checkbox" [(ngModel)]="showColor" />
+        <span>Show Colors</span>
+      </div>
+      <div class="control border">
+        <input type="checkbox" [(ngModel)]="isArray1" />
+        <span>Use charset 1</span>
+      </div>
+      <div>
+        <p-knob
+          [size]="150"
+          [strokeWidth]="9"
+          valueColor="golden"
+          rangeColor="black"
+        >
+        </p-knob>
+      </div>
+      <div class="range-ctrl">
+        <span>Dark Threshold</span>
+        <input type="range" min="0" max="255" [(ngModel)]="darkThreshold" />
+      </div>
+      <div class="range-ctrl">
+        <span>Light Threshold</span>
+        <input type="range" min="0" max="100" [(ngModel)]="lightThreshold" />
+      </div>
+      <div class="range-ctrl">
+        <span>Fine Tune</span>
+        <input type="range" min="0" max="100" [(ngModel)]="spacePadding" />
+      </div>
+      <div *ngIf="showColor" class="range-ctrl">
+        <span>Brightness</span>
+        <input
+          type="range"
+          min="-1"
+          step="0.01"
+          max="1"
+          [(ngModel)]="brightness"
+        />
+      </div>
+      <div *ngIf="showColor" class="range-ctrl">
+        <span>Contrast</span>
+        <input
+          type="range"
+          min="-100"
+          step="1"
+          max="100"
+          [(ngModel)]="contrast"
+        />
+      </div>
+      <div *ngIf="showColor" class="range-ctrl">
+        <span>Saturation</span>
+        <input
+          type="range"
+          min="-1"
+          step="0.01"
+          max="1"
+          [(ngModel)]="saturation"
+        />
+      </div>
+      <div *ngIf="showColor" class="range-ctrl">
+        <span>Intensity</span>
+        <input
+          type="range"
+          min="-1"
+          step="0.01"
+          max="1"
+          [(ngModel)]="intensity"
+        />
+      </div>
+    </div>
   </div>
 </div>
